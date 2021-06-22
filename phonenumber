@@ -1,0 +1,12 @@
+#find out the country and the service provider by using the python
+#import phonenumber 
+import phonenumbers
+from txt import number
+
+from phonenumbers import geocoder
+karthik = phonenumbers.parse(number,"Ch")
+print(geocoder.description_for_number(karthik,"te"))
+
+from phonenumbers import carrier
+servicenumber = phonenumbers.parse(number,"rO")
+print(carrier.name_for_number(servicenumber,"en"))
